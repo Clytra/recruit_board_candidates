@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecruitBoard.Services.Candidates", "RecruitBoard.Services.Candidates", "{DC17E7E5-0A44-410A-A9C6-964BD1405B87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A260991C-CCE9-41C8-8535-8B7CD785CD76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{579C5623-6976-4CD5-8B2F-CB6F6FBA1B77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Domain", "RecruitBoard.Services.Candidates.Domain\RecruitBoard.Services.Candidates.Domain.csproj", "{E9289434-A942-4889-A9B9-7EFF690A870D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Infrastructure", "RecruitBoard.Services.Candidates.Infrastructure\RecruitBoard.Services.Candidates.Infrastructure.csproj", "{17C1ECFD-AC4F-44EC-9076-0E8887B73767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Application", "RecruitBoard.Services.Candidates.Application\RecruitBoard.Services.Candidates.Application.csproj", "{A8B1763D-B756-46DE-AE47-1DCB3E996A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Api", "RecruitBoard.Services.Candidates.Api\RecruitBoard.Services.Candidates.Api.csproj", "{3927A738-47B7-4671-AEB9-DB72F65596E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A260991C-CCE9-41C8-8535-8B7CD785CD76} = {DC17E7E5-0A44-410A-A9C6-964BD1405B87}
+		{579C5623-6976-4CD5-8B2F-CB6F6FBA1B77} = {DC17E7E5-0A44-410A-A9C6-964BD1405B87}
+		{E9289434-A942-4889-A9B9-7EFF690A870D} = {A260991C-CCE9-41C8-8535-8B7CD785CD76}
+		{17C1ECFD-AC4F-44EC-9076-0E8887B73767} = {A260991C-CCE9-41C8-8535-8B7CD785CD76}
+		{A8B1763D-B756-46DE-AE47-1DCB3E996A7F} = {A260991C-CCE9-41C8-8535-8B7CD785CD76}
+		{3927A738-47B7-4671-AEB9-DB72F65596E7} = {A260991C-CCE9-41C8-8535-8B7CD785CD76}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9289434-A942-4889-A9B9-7EFF690A870D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9289434-A942-4889-A9B9-7EFF690A870D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9289434-A942-4889-A9B9-7EFF690A870D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9289434-A942-4889-A9B9-7EFF690A870D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C1ECFD-AC4F-44EC-9076-0E8887B73767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C1ECFD-AC4F-44EC-9076-0E8887B73767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C1ECFD-AC4F-44EC-9076-0E8887B73767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C1ECFD-AC4F-44EC-9076-0E8887B73767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B1763D-B756-46DE-AE47-1DCB3E996A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B1763D-B756-46DE-AE47-1DCB3E996A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B1763D-B756-46DE-AE47-1DCB3E996A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B1763D-B756-46DE-AE47-1DCB3E996A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3927A738-47B7-4671-AEB9-DB72F65596E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3927A738-47B7-4671-AEB9-DB72F65596E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3927A738-47B7-4671-AEB9-DB72F65596E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3927A738-47B7-4671-AEB9-DB72F65596E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
