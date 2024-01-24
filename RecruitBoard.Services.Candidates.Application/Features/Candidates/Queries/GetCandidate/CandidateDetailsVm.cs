@@ -1,3 +1,5 @@
+using RecruitBoard.Services.Candidates.Application.Dtos;
+
 namespace RecruitBoard.Services.Candidates.Application.Features.Candidates.Queries.GetCandidate;
 
 public class CandidateDetailsVm

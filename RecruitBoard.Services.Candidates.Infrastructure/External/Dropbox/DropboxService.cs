@@ -1,26 +1,24 @@
 using Dropbox.Api;
 using Dropbox.Api.Files;
+using Microsoft.AspNetCore.Http;
+using RecruitBoard.Services.Candidates.Application.Contracts.Infrastructure;
 
 namespace RecruitBoard.Services.Candidates.Infrastructure.External.Dropbox;
 
-public class DropboxService
+public class DropboxService(string accessToken) : ICloudStorageService
 {
-    private readonly string _accessToken;
-
-    public DropboxService(string accessToken)
+    public async Task UploadFileAsync(IFormFile file, string candidateId)
     {
-        _accessToken = accessToken;
-    }
+        var path = $"/{candidateId}/{file.FileName}";
 
-    public async Task UploadAsync(string path, Stream stream)
-    {
-        using var client = new DropboxClient(_accessToken);
+        await using var stream = file.OpenReadStream();
+        using var client = new DropboxClient(accessToken);
         await client.Files.UploadAsync(path, WriteMode.Overwrite.Instance, body: stream);
     }
 
     public async Task<Stream> DownloadAsync(string path)
     {
-        using var client = new DropboxClient(_accessToken);
+        using var client = new DropboxClient(accessToken);
         var response = await client.Files.DownloadAsync(path);
         return await response.GetContentAsStreamAsync();
     }

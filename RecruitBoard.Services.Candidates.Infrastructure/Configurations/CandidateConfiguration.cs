@@ -41,6 +41,21 @@ public class CandidateConfiguration
         builder
             .Property(c => c.Skills)
             .HasColumnName("skills");
+        builder
+            .Property(c => c.CreatedBy)
+            .HasColumnName("created_by");
+        builder
+            .Property(c => c.CreatedDate)
+            .HasColumnName("created_date");
+        builder
+            .Property(c => c.LastModifiedBy)
+            .HasColumnName("last_modified_by");
+        builder
+            .Property(c => c.LastModifiedDate)
+            .HasColumnName("last_modified_date");
+        builder
+            .Property(c => c.Deleted)
+            .HasColumnName("deleted");
 
         builder
             .HasMany(c => c.Educations)

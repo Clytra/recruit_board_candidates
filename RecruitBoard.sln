@@ -14,6 +14,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Api", "RecruitBoard.Services.Candidates.Api\RecruitBoard.Services.Candidates.Api.csproj", "{3927A738-47B7-4671-AEB9-DB72F65596E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Domain.UnitTests", "RecruitBoard.Services.Candidates.Domain.UnitTests\RecruitBoard.Services.Candidates.Domain.UnitTests.csproj", "{7B8D39E7-690B-479D-9295-A78CA84DDD44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Application.UnitTests", "RecruitBoard.Services.Candidates.Application.UnitTests\RecruitBoard.Services.Candidates.Application.UnitTests.csproj", "{D5EA14BD-1371-4FF7-B0F5-09068B0BF932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitBoard.Services.Candidates.Api.IntegrationTests", "RecruitBoard.Services.Candidates.Api.IntegrationTests\RecruitBoard.Services.Candidates.Api.IntegrationTests.csproj", "{6974E787-3B5E-4BBE-A835-223B6F422C2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +32,9 @@ Global
 		{17C1ECFD-AC4F-44EC-9076-0E8887B73767} = {A260991C-CCE9-41C8-8535-8B7CD785CD76}
 		{A8B1763D-B756-46DE-AE47-1DCB3E996A7F} = {A260991C-CCE9-41C8-8535-8B7CD785CD76}
 		{3927A738-47B7-4671-AEB9-DB72F65596E7} = {A260991C-CCE9-41C8-8535-8B7CD785CD76}
+		{7B8D39E7-690B-479D-9295-A78CA84DDD44} = {579C5623-6976-4CD5-8B2F-CB6F6FBA1B77}
+		{D5EA14BD-1371-4FF7-B0F5-09068B0BF932} = {579C5623-6976-4CD5-8B2F-CB6F6FBA1B77}
+		{6974E787-3B5E-4BBE-A835-223B6F422C2B} = {579C5623-6976-4CD5-8B2F-CB6F6FBA1B77}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E9289434-A942-4889-A9B9-7EFF690A870D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +53,17 @@ Global
 		{3927A738-47B7-4671-AEB9-DB72F65596E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3927A738-47B7-4671-AEB9-DB72F65596E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3927A738-47B7-4671-AEB9-DB72F65596E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8D39E7-690B-479D-9295-A78CA84DDD44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8D39E7-690B-479D-9295-A78CA84DDD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8D39E7-690B-479D-9295-A78CA84DDD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8D39E7-690B-479D-9295-A78CA84DDD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EA14BD-1371-4FF7-B0F5-09068B0BF932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EA14BD-1371-4FF7-B0F5-09068B0BF932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EA14BD-1371-4FF7-B0F5-09068B0BF932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EA14BD-1371-4FF7-B0F5-09068B0BF932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6974E787-3B5E-4BBE-A835-223B6F422C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6974E787-3B5E-4BBE-A835-223B6F422C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6974E787-3B5E-4BBE-A835-223B6F422C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6974E787-3B5E-4BBE-A835-223B6F422C2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

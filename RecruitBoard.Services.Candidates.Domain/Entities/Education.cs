@@ -1,8 +1,6 @@
-using RecruitBoard.Services.Candidates.Domain.Common;
-
 namespace RecruitBoard.Services.Candidates.Domain.Entities;
 
-public class Education : AuditableEntity
+public class Education 
 {
     public Guid Id { get; private set; }
     public string InstitutionName { get; private set; }

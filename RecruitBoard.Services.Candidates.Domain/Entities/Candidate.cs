@@ -33,9 +33,14 @@ public class Candidate : AuditableEntity
     }
 
     public static Candidate Create(Guid id, string firstname, string lastname, string city, 
-        string country, string personalData, string skills)
+        string country, string personalData, string skills, List<Education> educations,
+        List<Experience> experiences)
     {
         Candidate candidate = new(id, firstname, lastname, city, country, personalData, skills);
+
+        candidate.Educations = educations;
+        candidate.Experiences = experiences;
+        
         //TODO: Add Event
 
         return candidate;

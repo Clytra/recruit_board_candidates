@@ -1,7 +1,9 @@
 namespace RecruitBoard.Services.Candidates.Application.Exceptions;
 
-public class NotFoundException : Exception
+public class NotFoundException(string entityType, Guid entityId)
+    : AppException($"Record of type: {entityType} with ID: {entityId} was not found.")
 {
-    public NotFoundException(string name, object key)
-        : base($"{name} ({key} is not found") { }
+    public override string Code => "not_found_exception";
+    public string EntityType { get; } = entityType;
+    public Guid EntityId { get; } = entityId;
 }

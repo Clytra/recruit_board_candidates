@@ -5,6 +5,5 @@ namespace RecruitBoard.Services.Candidates.Application.Features.Candidates.Comma
 public class CreateCandidateCommandResponse : BaseResponse
 {
     public CreateCandidateCommandResponse() : base() { }
-    
-    public CreateCandidateDto Candidate { get; set; }
+    public Guid CandidateId { get; set; }
 }

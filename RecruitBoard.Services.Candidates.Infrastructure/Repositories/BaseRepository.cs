@@ -3,19 +3,20 @@ using RecruitBoard.Services.Candidates.Application.Contracts.Infrastructure;
 
 namespace RecruitBoard.Services.Candidates.Infrastructure.Repositories;
 
-public class BaseRepository<T> : IAsyncRepository<T> 
+public class BaseRepository<T>(DataContext context) : IAsyncRepository<T>
     where T : class
 {
-    protected readonly DataContext _context;
+    protected readonly DataContext _context = context;
 
-    public BaseRepository(DataContext context)
+    public virtual async Task<bool> IsExist(Guid id)
     {
-        _context = context;
+        var entity = await _context.Set<T>().FindAsync(id);
+        return entity != null;
     }
 
     public virtual async Task<T?> GetByIdAsync(Guid id)
     {
-        T? t = await _context.Set<T>().FindAsync(id);
+        var t = await _context.Set<T>().FindAsync(id);
         return t;
     }
 

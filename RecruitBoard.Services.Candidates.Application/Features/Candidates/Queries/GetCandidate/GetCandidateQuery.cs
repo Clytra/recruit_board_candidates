@@ -4,5 +4,5 @@ namespace RecruitBoard.Services.Candidates.Application.Features.Candidates.Queri
 
 public class GetCandidateQuery : IRequest<CandidateDetailsVm>
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; init; }
 }

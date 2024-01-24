@@ -1,8 +1,6 @@
-using RecruitBoard.Services.Candidates.Domain.Common;
-
 namespace RecruitBoard.Services.Candidates.Domain.Entities;
 
-public class Experience : AuditableEntity
+public class Experience 
 {
     public Guid Id { get; private set; }
     public string CompanyName { get; private set; }
